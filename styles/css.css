@@ -1,0 +1,276 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url("../img/fondoo.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    font-size: 100%;
+}
+
+@media screen and (max-width: 768px) {}
+
+.logo {
+    height: 150px;
+}
+
+
+/*LINKS*/
+
+a:visited {
+    color: white;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+    color: #D0D7E1;
+}
+
+li a.active,
+li a:hover {
+    background: black;
+    transition: .5s;
+    border-radius: 10px;
+    color: white;
+}
+
+/*NAV*/
+nav {
+    background: #635845;
+    height: 145px;
+    width: 100%;
+    border-style: dashed;
+    display: block;
+}
+
+/*MENU*/
+
+.drop {
+    background-color: #252119;
+    color: white;
+    padding: 10px;
+    font-size: 50px;
+    border: none;
+    cursor: pointer;
+    margin-inline: 440px;
+    border-radius: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 300px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown {
+    position: absolute;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.dropdown-content {
+    display: none;
+    position: relative;
+    background-color: #fdf1d9;
+    min-width: 160px;
+    width: 500px;
+    margin: auto;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: dashed;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.dropdown-content a:hover {
+    background-color: #252119;
+    color: #f8e6c2;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*CARATULA*/
+.texto,
+.tema,
+.objs,
+.planteamiento,
+.justhip,
+.marct,
+.bibli,
+.metod{
+    background-color: #8f8064;
+    margin: auto;
+    height: auto;
+    width: 800px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.texto p,
+.texto h2,
+.tema p,
+.tema h2,
+.objs h2,
+.objs p,
+.planteamiento p,
+.planteamiento h2,
+.justhip p,
+.justhip h2,
+.marct h2,
+.marct p,
+.marct h3,
+.marct h4,
+.marct ol li,
+.metod p,
+.metod h2,
+.metod ol li,
+.metod ul li,
+.bibli h2,
+.bibli p,
+.bibli a 
+{
+    color: white;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.texto img,
+.tema img {
+    height: 300px;
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*TEMA*/
+
+.tema,
+.planteamiento,
+.bibli,
+.metod {
+    width: 1100px;
+}
+
+.tema #tem {
+    background-color: #baad92;
+    border-radius: 20px;
+    width: 1000px;
+    margin: auto;
+}
+
+.tema #int,
+.objs #objg,
+.planteamiento #plant,
+.justhip #just,
+.justhip #hip,
+.marct #marc,
+.metod #met,
+.bibli #bib{
+    background-color: #baad92;
+    border-radius: 20px;
+    width: 300px;
+    margin: auto;
+}
+
+.metod h3{
+    background-color: #baad92;
+    border-radius: 20px;
+    width: 200px;
+    text-align: center;
+    margin: auto;
+}
+
+.tema #int h2,
+.tema #tem h2,
+.objs #obje h2,
+.objs #objg h2,
+.planteamiento #plant h2,
+.justhip #just h2,
+.justhip #hip h2,
+.marct #marc h2,
+.marct h3,
+.metod #met h2,
+.bibli h2,
+.bibli p{
+    color: #252119;
+}
+
+/*OBJETIVOS*/
+
+.objs #obje
+{
+    background-color: #baad92;
+    border-radius: 20px;
+    width: 400px;
+    margin: auto;
+}
+
+/*PLANTEAMIENTO*/
+.planteamiento #plant {
+    background-color: #baad92;
+    border-radius: 20px;
+    width: 500px;
+    margin: auto;
+}
+
+/*MARCO TEORICO*/
+.marct{
+    width: 1000px;
+}
+/*FOOTER*/
+footer {
+    background: #3a3429;
+    width: 100%;
+    padding: 1em 0;
+    color: white;
+    margin-top: auto;
+}
+
+.footer-content,
+.footer-content p {
+    background: #3a3429;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 3px;
+}
+
+.footer-bot,
+.footer-bot p {
+    background: #635845;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 14px;
+    word-spacing: 5px;
+}
+
+/*FOTOs*/
+div.galeria{
+    margin: 50px;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 6px 20px 0 rgb(0,0,0,0.19);
+    float: left;
+    width: 400px;
+    height: 400px;
+}
+div.galeria:hover{
+    border:  #241e1cd3;
+    transform: rotate(-4deg);
+}
+
+.metod img{
+    height: 400px;
+    width: 400px;
+    margin: auto;
+}
